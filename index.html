@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shibarium Refugees</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="relative font-inter antialiased">
+
+    <main class="relative min-h-screen flex flex-col justify-center bg-slate-900 overflow-hidden">
+        
+
+
+
+<nav class="w-full z-20 top-0 start-0 ">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="logo.jpg" class="h-12 rounded-full" alt="Flowbite Logo">
+      <span class="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Shibarium Refugees</span>
+  </a>
+  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <a href="">
+        <button type="button" class="h-10 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Play Now</button>
+      </a>
+      <!-- <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button> -->
+  </div>
+  
+  
+  </div>
+</nav>
+
+  
+        <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
+    
+            <div class="text-center">
+
+                <!-- Illustration #1 -->
+                <div class="absolute top-0 left-0 rotate-180 -translate-x-3/4 -scale-x-100 blur-3xl opacity-70 pointer-events-none" aria-hidden="true">
+                    <img src="./shape.svg" class="max-w-none" width="852" height="582" alt="Illustration" />
+                </div>
+                
+                <!-- Illustration #2 -->
+                <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 blur-3xl opacity-70 pointer-events-none" aria-hidden="true">
+                    <img src="./shape.svg" class="max-w-none" width="852" height="582" alt="Illustration" />
+                </div>
+
+                    <!-- Illustration #3 -->
+                    <div class="absolute bottom-0 left-0 rotate-180 -translate-x-3/4 -scale-x-100 blur-3xl opacity-70 pointer-events-none" aria-hidden="true">
+                        <img src="./shape.svg" class="max-w-none" width="852" height="582" alt="Illustration" />
+                    </div>
+                    
+                    <!-- Illustration #4 -->
+                    <div class="absolute bottom-0 right-0 -translate-y-1/2 translate-x-1/4 blur-3xl opacity-20 pointer-events-none" aria-hidden="true">
+                        <img src="./shape.svg" class="max-w-none" width="852" height="582" alt="Illustration" />
+                    </div>
+
+                <!-- Particles animation -->
+                <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+                    <canvas data-particle-animation></canvas>
+                </div>
+            
+                <div class="relative">
+                
+                        <!-- <img class="object-position: center;w-20" src="logo.jpg" alt=""> -->
+                
+                    <h1 style="margin-top: 10px;margin-bottom: 20px;" class="inline-flex font-extrabold text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Shibarium Refugees</h1>
+
+                    <div class="container">
+                        <h1 id="headline">Countdown to token launch</h1>
+                        <div id="countdown">
+                          <ul>
+                            <li><span id="days"></span>days</li>
+                            <li><span id="hours"></span>Hours</li>
+                            <li><span id="minutes"></span>Minutes</li>
+                            <li><span id="seconds"></span>Seconds</li>
+                          </ul>
+                        </div>
+                        <div id="content" class="emoji">
+                          <!-- <span>🥳</span>
+                          <span>🎉</span> -->
+                          <a class=" justify-center whitespace-nowrap rounded-lg bg-indigo-500 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 group" href="">
+                            Buy Now
+                        </a>
+
+                         <!-- <span>🥳</span>
+                          <span>🎉</span> -->
+                          <!-- <span>🎂</span> -->
+                        </div>
+                    </div>
+                   
+
+
+                    <div style="margin-top: 100px;" class="max-w-3xl mx-auto mb-8">
+                        <p class="text-lg text-slate-400">Elevating crypto fun with memes, gaming, and NFT powered excitement.</p>
+                    </div>
+                    <div class="inline-flex justify-center space-x-4">
+                        <div>
+                            <a class="inline-flex justify-center whitespace-nowrap rounded-lg bg-indigo-500 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 group" href="">
+                                Play Now <span class="tracking-normal text-indigo-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://t.me/Shibariumrefeeges"  class="inline-flex justify-center whitespace-nowrap rounded-lg bg-slate-700 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-slate-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="#0">
+                                Telegram
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div>
+           <center>
+           <div class="joincontainer">
+            <div>
+                <img class="animate-jump-in animate-once animate-ease-linear" style="display: flex;align-items: center;" src="game.png" alt="">
+               </div>
+                <div id="join-text" class="font-extrabold text-1xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-20 to-slate-20/60 pb-4">
+                    Unleashing the power of laughter and innovation on the Ethereum blockchain, where MEME culture collides with cutting-edge gaming, creating an exhilarating ecosystem of NFT-powered characters, P2P challenges, and weekly tournaments, inviting you to redefine crypto entertainment.
+                </div>
+                
+           </div>
+
+           </center>
+        </div>
+        <center>
+            <h1 style="margin-top: 100px;margin-bottom: -40px;" class="inline-flex font-extrabold text-2xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Tokenomics</h1>
+            <!-- <img src="tockenomics.png" alt=""> -->
+
+
+
+
+
+            
+<div class="max-w-sm w-full  rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
+    <!-- Line Chart -->
+    <div class="py-10" id="pie-chart"></div>
+  
+    <div style="margin-bottom: 50px;" class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between">
+    
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+        </center>
+
+
+
+        
+
+        <center>
+            <h1 style="margin-top: 40px;margin-bottom: 40px;" class="inline-flex font-extrabold text-2xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Roadmap</h1>
+        </center>
+
+
+
+        <!-- Roadmap -->
+
+
+        <div class="timeline">
+            <div class="outer">
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">Mar 30 2024</h3>
+                  <p>Token launch to public</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">TBA</h3>
+                  <p>Reward the game test-net players, listing token on 2x cex</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">TBA</h3>
+                  <p>Trending token on dextools - ave - dexscreener and similar platforms </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">TBA</h3>
+                  <p>Banner ads in big websites </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">TBA</h3>
+                  <p>Kol groups and marketing to happy investors </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        <!-- <footer class="absolute left-6 right-6 md:left-12 md:right-auto bottom-4 md:bottom-8 text-center md:text-left">
+            <a class="text-xs text-slate-500 hover:underline" href="https://cruip.com">&copy;Hercules Inu | All rights reserved</a>
+        </footer> -->
+
+
+
+
+        <!-- Team info -->
+
+        <!-- <center>
+            <h1 style="margin-top: 40px;margin-bottom: 60px;" class="inline-flex font-extrabold text-2xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Team</h1>
+        </center>
+
+        <div class="team">
+          
+                <div>
+                    <img src="team5.jpg" alt="">
+                    <div class="team-text">X Maker</div>
+                </div>
+                <div>
+                    <img src="IMG_20240220_194850.jpg" alt="">
+                    <div class="team-text">X Maker</div>
+                </div>
+                <div>
+                    <img src="IMG_20240220_194528.jpg" alt="">
+                    <div class="team-text">X Maker</div>
+                </div>
+                <div>
+                    <img src="team2.jpg" alt="">
+                    <div class="team-text">X Maker</div>
+                </div>
+          
+        </div>
+        
+            <div class="back">
+                <center>
+                   <h5 id="downloadtext" class="font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-20 to-slate-20/60 pb-4">Download Comming Soon</h5>
+                <div class="download">
+                   <div>
+                     <img class="download1" src="playstore.png"></img>
+                   </div>
+                   <div>
+                     <img class="download2" src="download.png"></img>
+                   </div>
+                 </div>
+                 <br>
+                 </br>
+                 <br></br>
+       
+                </center>
+                </div>
+
+            -->
+
+<!--Footer -->
+
+
+
+                <!-- <footer class="dark:bg-gray-900">
+                    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8"> 
+                      <div class="sm:flex sm:items-center sm:justify-between">
+                          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="" class="hover:underline">Hercules™</a>. All Rights Reserved.
+                          </span>
+                          <div class="flex mt-4 sm:justify-center sm:mt-0">
+                        
+                              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+                                </svg>
+                                  
+                                  
+                                
+                                  <span class="sr-only">Telegram</span>
+                              </a>
+                              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                                </svg>
+                                  <span class="sr-only">Twitter page</span>
+                              </a>
+                            
+                        
+                          </div>
+                      </div>
+                    </div>
+                </footer> -->
+
+
+
+
+                
+
+<footer class=" dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl">
+      <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                    <a href="#" class=" hover:underline">About</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Careers</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Brand Center</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                    <a href="https://t.me/Shibariumrefeeges" class="hover:underline">Telegram</a>
+                </li>
+                <li class="mb-4">
+                    <a href="https://x.com/@Erc20Shibarium" class="hover:underline">Twitter</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Facebook</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Licensing</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">iOS</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Android</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Windows</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">MacOS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="px-4 py-6  md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 <a href="">Shibarium™</a>. All Rights Reserved.
+        </span>
+
+      </div>
+    </div>
+</footer>
+
+
+
+    </main>
+    
+    <!-- Page footer -->
+  
+    <!-- Banner with links -->
+    <!-- <div class="fixed bottom-0 right-0 w-full md:bottom-6 md:right-12 md:w-auto z-50" :class="bannerOpen ? '' : 'hidden'" x-data="{ bannerOpen: true }">
+        <div class="bg-slate-800 text-sm p-3 md:rounded shadow flex justify-between">
+            <div class="text-slate-500 inline-flex">
+                <a class="font-medium hover:underline text-slate-300" href="https://cruip.com/how-to-create-a-beautiful-particle-animation-with-html-canvas/">
+                    Read Tutorial
+                </a>
+                <span class="italic px-1.5">or</span>
+                <a class="font-medium hover:underline text-indigo-500 flex items-center" href="https://github.com/cruip/cruip-tutorials/blob/main/particle-animation/particle-animation.js" target="_blank" rel="noreferrer">
+                    <span>Download</span>
+                    <svg class="fill-indigo-400 ml-1" xmlns="http://www.w3.org/2000/svg" width="9" height="9">
+                        <path d="m1.649 8.514-.91-.915 5.514-5.523H2.027l.01-1.258h6.388v6.394H7.158l.01-4.226z" />
+                    </svg>
+                </a>
+            </div>
+            <button class="text-slate-500 hover:text-slate-400 pl-2 ml-3 border-l border-slate-700" @click="bannerOpen = false">
+                <span class="sr-only">Close</span>
+                <svg class="w-4 h-4 shrink-0 fill-current" viewBox="0 0 16 16">
+                    <path d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z" />
+                </svg>
+            </button>
+        </div>
+    </div> -->
+ 
+
+    <script src="./particle-animation.js"></script>
+</body>
+
+</html>
+
+

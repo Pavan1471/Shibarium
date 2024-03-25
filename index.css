@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sixtyfour&display=swap');
+
+.App {
+  text-align: center;
+
+
+    color: #fff;
+    background:linear-gradient(#6af, #9df);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    font-size: 2vw;
+    font-weight: bold;
+    padding-bottom: 50px;
+  
+}
+.tockenomics-img{
+  width: 470px;
+  height: 400px;
+}
+.tockenomics-style{
+  background:linear-gradient( #9df,#6af);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 25px;
+  margin-top: -360px;
+  padding-top: 350px;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+h1{
+  /* font-family: "Gloria Hallelujah", cursive; */
+  margin-top: 190px;
+  margin-bottom: -50px;
+}
+.text{
+  text-align: center;
+  font-family: "Gloria Hallelujah", cursive;
+  font-family: "Permanent Marker", cursive;
+  color: #fff;
+  
+}
+.roadmap{
+  background:linear-gradient( #6af,#9df);
+  padding-top: 20px;
+
+
+}
+.roadmap h1{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.header{
+  display: flex;
+  padding-top: 10px;
+   justify-content: space-between; 
+
+  align-items: center;
+  /* background:linear-gradient(#6af); */
+  background-color: #6af;
+}
+.logo-text{
+  font-family: "Protest Riot", sans-serif;
+  font-size: 20px;
+  
+}
+h4{
+  font-family: "Protest Riot", sans-serif;
+  font-size: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -600px;
+}
+.intro{
+  margin-top: -600px;
+  padding-bottom: 300px;
+}
+.header img{
+  width: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.logo{
+  display: flex;
+  align-items: center;
+
+}
+h5{
+  font-family: "Protest Riot", sans-serif;
+  font-size: 20px;
+}
+.btn{
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  /* background-size: 100% auto; */
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+  height: 50px;
+  margin-top: 80px;
+}
+button{
+  margin-right: 10px;
+  
+}
+button {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  /* background-size: 100% auto; */
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+  height: 50px;
+ }
+ .social{
+  display: flex;
+ }
+
+ button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+ }
+ 
+ @keyframes pulse512 {
+  0% {
+   box-shadow: 0 0 0 0 #05bada66;
+  }
+ 
+  70% {
+   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+ 
+  100% {
+   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+ }
+
+ .footer{
+  font-family: "Protest Riot", sans-serif;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+ .img-container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  
+  
+}
+.joincontainer{
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+}
+.joincontainer img{
+  width: 300px;
+}
+
+.join{
+  background-color: #9df;
+  /* padding-top: 200px; */
+  margin-top: -190px;
+  padding-bottom: 0px;
+
+}
+.img-container img{
+  width: 300px;
+  
+}
+.game-text{
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Sixtyfour", sans-serif;
+  font-family: "Permanent Marker", cursive;
+}
+.game-another{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.game-another img{
+  width: 40px;
+}
+.whitepaper{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: peachpuff;
+  margin-top: -5px;
+}
+.team img{
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.team{
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-left: 13%;
+  margin-right: 13%;
+}
+.team-text{
+  color: #fff;
+  margin-bottom: 30px;
+
+}
+.download{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /* margin-right: 200px; */
+ 
+}
+.download1{
+  margin-left: 30px;
+}
+.download2{
+  margin-right: 30px;
+}
+.back{
+  /* background-color: #9df; */
+  /* padding: 100px; */
+  text-align: center;
+}
+.download img{
+  width: 150px;
+}
+
+#join-text{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+  .joincontainer{
+    flex-direction: row;
+  }
+  #join-text{
+    font-size: 30px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    width: 40%;
+    margin-top: 0;
+    
+
+  }
+  .joincontainer img{
+    width: 700px;
+  }
+  .tockenomics-style{
+    flex-direction: row;
+  }
+  .tockenomics-img{
+    width: 570px;
+    height: 570px;
+    
+  }
+  .text{
+    font-size: 30px;
+    
+  }
+  .logo-text{
+    font-family: "Protest Riot", sans-serif;
+    font-size: 30px;
+    
+  }
+  h4{
+    font-family: "Protest Riot", sans-serif;
+    font-size: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .intro{
+    margin-top: -800px;
+    padding-bottom: 400px;
+  }
+  .tockenomics-style{
+    background:linear-gradient( #9df,#6af);
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+    padding-top: 0px;
+    margin-top: -250px;
+    padding-top: 200px;
+  
+  }
+  h5{
+    font-family: "Protest Riot", sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .footer{
+    font-family: "Protest Riot", sans-serif;
+  }
+  h1{
+    /* font-family: "Gloria Hallelujah", cursive; */
+     margin-top: -120px; 
+    margin-bottom: -20px; 
+  }
+  .btn{
+
+    margin-top: -50px;
+  }
+  
+
+
+
+
+
+
+
+  .img-container{
+    flex-direction: row;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 400px;
+}
+.game-text{
+    font-size: 30px;
+   
+  
+}
+.img-container img{
+    width: 600px;
+    
+}
+.game-another img{
+    width: 70px;
+}
+.whitepaper{
+  padding: 20px;
+  border-radius: 10px;
+ background-color:peachpuff;
+}
+.join{
+  background-color: #9df;
+  /* padding-top: 200px; */
+  margin-top: -300px;
+  margin-bottom: -230px;
+
+}
+.download{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+/* .download1{
+  margin-left: 10px;
+}
+.download2{
+  margin-right: 10px;
+} */
+.download img{
+  width: 300px;
+}
+
+.download1{
+  margin-right: 20px;
+}
+.download2{
+  margin-left: 20px;
+}
+
+
+
+  
+}
+
+
+/* general styling */
+:root {
+  --smaller: .75;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  /* text-transform: uppercase; */
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  /* text-transform: uppercase; */
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+
+
+:root {
+  /* --primary-color: #212121;
+  --background-color: #111; */
+  --font: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background-color);
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+}
+
+/* Timeline Container */
+.timeline {
+  /* background: var(--primary-color);
+   */
+   
+  margin: 20px auto;
+  padding: 20px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  max-width: 350px;
+  
+
+}
+
+/* setting padding based on even or odd */
+.card:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid rgb(47,47,139);
+}
+
+/* Setting the border of top, bottom, left */
+.card:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the border of top, bottom, right */
+.card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  /* background: rgb(47,47,139); */
+  background: rgba(46, 45, 138, 0.42);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(46, 45, 138, 0.3);
+  color: gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: orangered;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid orangered;
+}
+
+/* text right if the card is even  */
+.card:nth-child(even) > .info > .title {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.card:nth-child(odd) > .info > .title::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.card:nth-child(even) > .info > .title::before {
+  right: -45px;
+}
